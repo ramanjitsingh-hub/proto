@@ -1,0 +1,42 @@
+{
+  "flutter": {
+    "platforms": {
+      "android": {
+        "default": {
+          "projectId": "trufood-1aa1b",
+          "appId": "1:1028525211416:android:f2b06cdbe98ec5ebada86d",
+          "fileOutput": "android/app/google-services.json"
+        }
+      },
+      "dart": {
+        "lib/firebase_options.dart": {
+          "projectId": "trufood-1aa1b",
+          "configurations": {
+            "android": "1:1028525211416:android:f2b06cdbe98ec5ebada86d",
+            "ios": "1:1028525211416:ios:9dcec16d032a2bdcada86d",
+            "macos": "1:1028525211416:ios:9dcec16d032a2bdcada86d",
+            "web": "1:1028525211416:web:e1542bfb944a057dada86d",
+            "windows": "1:1028525211416:web:becb1265a697fc83ada86d"
+          }
+        }
+      }
+    }
+  },
+  "database": {
+    "rules": "database.rules.json"
+  },
+  "hosting": {
+    "public": "build/web",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}
